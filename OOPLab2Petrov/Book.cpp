@@ -1,6 +1,7 @@
 #include "pch.h"
 #include "Book.h"
 #include <string>
+#include "targetver.h"
 
 using namespace std;
 
@@ -12,7 +13,7 @@ PetrovBook::~PetrovBook()
 {
 }
 
-IMPLEMENT_SERIAL(PetrovBook, CObject, 1)
+IMPLEMENT_SERIAL(PetrovBook, CObject, 0)
 
 void PetrovBook::create()
 {

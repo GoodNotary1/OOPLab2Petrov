@@ -11,7 +11,7 @@ classified_book::~classified_book()
 {
 }
 
-IMPLEMENT_SERIAL(classified_book, PetrovBook, 1)
+IMPLEMENT_SERIAL(classified_book, PetrovBook, VERSIONABLE_SCHEMA | 1)
 
 void classified_book::create()
 {

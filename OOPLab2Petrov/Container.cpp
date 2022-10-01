@@ -74,11 +74,9 @@ void PetrovContainer::LoadFile(string name)
 {
 	CFile file((LPCTSTR)(name.c_str()), CFile::modeRead);
 	CArchive f(&file, CArchive::load);
-	int n;
 	int count;
 
 	f >> count;
-	f >> n;
 
 	for (int i = 0; i < count; i++)
 	{
